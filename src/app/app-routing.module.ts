@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'onboarding',
+    loadChildren: () => import('./pages/onboarding/onboarding.module').then( m => m.OnboardingPageModule)
+  },
+  {
+    path: 'todoboard',
+    loadChildren: () => import('./pages/todoboard/todoboard.module').then( m => m.TodoboardPageModule)
+  },
+  {
+    path: 'addtodo',
+    loadChildren: () => import('./pages/addtodo/addtodo.module').then( m => m.AddtodoPageModule)
+  },
 ];
 
 @NgModule({
