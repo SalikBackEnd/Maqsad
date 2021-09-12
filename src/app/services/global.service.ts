@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { SplashScreenPlugin } from '@capacitor/splash-screen';
+
+import { SplashScreen } from '@capacitor/splash-screen';
 
 @Injectable({
   providedIn: 'root'
@@ -7,11 +8,14 @@ import { SplashScreenPlugin } from '@capacitor/splash-screen';
 export class GlobalService {
 
   constructor(
-    public SplashScreen:SplashScreenPlugin
-  ) { 
-    SplashScreen.show();
+    
+  ) {
+   
+  }
+ 
+  SplashHide() {
+   SplashScreen.hide();
   }
 
-  
 
 }

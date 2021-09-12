@@ -10,14 +10,15 @@ export class TodoboardPage implements OnInit {
 
   constructor(
     private global:GlobalService
+
   ) {
-    
+   
   }
   
   ngOnInit() {
     
   }
   ionViewWillEnter(){
-    this.global.SplashScreen.hide();
+    this.global.SplashHide();
   }
 }
