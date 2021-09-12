@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">maqsad</string>
+    <string name="title_activity_main">maqsad</string>
+    <string name="package_name">com.salikdev.maqsad</string>
+    <string name="custom_url_scheme">com.salikdev.maqsad</string>
+</resources>
